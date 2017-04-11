@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
+	<title>停车卡号已经在使用</title>
+	<!-- Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+	<!-- jQuery文件 -->
+	<script src="/static/js/jquery-3.1.0.js"></script>
+	<!-- Bootstrap 核心 JavaScript 文件 -->
+	<script src="/static/js/bootstrap.min.js"></script>
+	<!-- 我的样式 pms.css 文件 -->
+	<link rel="stylesheet" href="/static/css/pms.css">
+	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+	<script src="/static/js/ie-emulation-modes-warning.js"></script>
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+</head>
+<!-- head.html -->
+<%include head.html%>
+
+	<body>
+
+		<body>
+
+			<form class="col-sm-offset-1 col-sm-3 form-horizontal pms-bg-white" role="form" method="post" action="/home/staff/checkin">
+
+				<h1 align="center">车辆进入登记</h1>
+				<h3 class="pms-red" align="center">此停车卡号已经在使用</h3>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-4 control-label">停车卡号：</label>
+					<div class="col-sm-4">
+						<input type="number" class="form-control" name="c_id" placeholder="请输入卡号" min="1" max="1000" required/>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="inputPassword3" class="col-sm-4 control-label">车位大小：</label>
+					<div class="col-sm-4">
+						<select class="form-control" name="size">
+  					<option value="1">小型车位</option>
+  					<option value="2">中型车位</option>
+  					<option value="3">大型车位</option>
+	  			</select>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-sm-offset-5 col-sm-6">
+						<button type="submit" class="btn btn-primary">提交</button>
+					</div>
+				</div>
+
+			</form>
+
+			<form class="col-sm-offset-1 col-sm-3 form-horizontal pms-bg-white" role="form" method="post" action="/home/staff/checkout">
+
+				<h1 align="center">车辆离开登记</h1>
+				<br>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-4 control-label">停车卡号：</label>
+					<div class="col-sm-4">
+						<input type="number" class="form-control" name="c_id" placeholder="请输入卡号" min="1" max="1000" required/>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-sm-offset-5 col-sm-6">
+						<button type="submit" class="btn btn-primary">提交</button>
+					</div>
+				</div>
+				<br><br>
+			</form>
+		</body>
+
+</html>
