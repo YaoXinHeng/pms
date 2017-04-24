@@ -153,7 +153,7 @@ export default class extends Base {
 		//读取数据库判断车位是否维修
 		let p_no = this.get("p_no");
 		let model = await this.model('parking');
-		let repair = "维修";
+		let repair = "维修中";
 		let affectedRows = await model.where({ p_no: p_no }).update({ repair: repair });
 		await this.redirect("/home/admin/parkinglist");
 	}
