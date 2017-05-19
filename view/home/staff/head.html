@@ -38,7 +38,7 @@
 
   <script>
     //AJAX显示车位
-    setInterval("remainingparking()", 100);
+    setInterval("remainingparking()", 1000);
     function remainingparking() {
       $("#remainingparking").load("/home/staff/remainingparking");
     };
@@ -76,7 +76,6 @@
       <div class="widget">
         <h2 class="title">剩余车位</h2>
         <div class="content community" id="remainingparking">
-
         </div>
       </div>
 

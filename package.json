@@ -1,6 +1,6 @@
 {
-  "name": "thinkjs-application",
-  "description": "application created by thinkjs",
+  "name": "pms",
+  "description": "停车场管理系统",
   "version": "1.0.0",
   "scripts": {
     "start": "node www/development.js",
@@ -21,5 +21,16 @@
     "babel-core": "6.x.x"
   },
   "repository": "",
-  "license": "MIT"
+  "license": "MIT",
+  "apidoc": { 
+      "title": "停车场管理系统文档", 
+      "url" : "localhost:8360",
+      "order":[
+        "login",
+        "loginchreck",
+        "index",
+        "remainingparking",
+        "logout"
+      ]
+  }
 }

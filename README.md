@@ -1,13 +1,19 @@
 
-Application created by [ThinkJS](http://www.thinkjs.org)
+停车场管理系统
+基于[ThinkJS框架](http://www.thinkjs.org)
+## API-文档
 
-## Install dependencies
+```
+pms/doc/index
+```
+
+## Install dependencies-安装
 
 ```
 npm install
 ```
 
-## Start server
+## Start server-启动服务
 
 ```
 npm start

@@ -7,7 +7,7 @@ export default class extends Base {
 	 * index action
 	 * @return {Promise} []
 	 */
-
+	
 	//验证登录，显示登录信息
 	async admindata() {
 		//验证登录
@@ -31,6 +31,12 @@ export default class extends Base {
 
 	//登录页面
 	async loginAction() {
+		/**
+		 * @api {get} /home/admin/login 管理员登录页面
+		 * @apiName login
+		 * @apiGroup admin
+		 * @apiVersion 1.0.0
+		 */
 		await this.display();
 	}
 
@@ -294,7 +300,6 @@ export default class extends Base {
 		await this.admindata();
 		await this.display();
 	}
-
 
 	//修改员工信息
 	async updatestaffAction() {
